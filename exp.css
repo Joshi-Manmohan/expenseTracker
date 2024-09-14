@@ -1,0 +1,98 @@
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 750px;
+    justify-items: center;
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 5px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #000000; 
+}
+
+/* Input Styles */
+.input-field input {
+    border-bottom: 1px solid #000000;
+    transition: border-color 0.3s ease;
+}   
+
+.input-field input:focus {
+    border-bottom: 2px solid #00796b; 
+}
+
+.input-field label {
+    color: #000000; 
+}
+
+/* Button Styles */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.btn {
+    flex: 1;
+    margin-right: 10px;
+    background-color: #00796b; 
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #004d40; 
+    transform: scale(1.05); 
+}
+
+.btn:last-child {
+    margin-right: 0;
+    background-color: #c92d2d; 
+}
+
+.btn:last-child:hover {
+    background-color: #b53e3e; 
+}
+
+/* Collection Styles */
+.collection-header {
+    background-color: #b8ebe8;
+    border-bottom: 2px solid #000000;
+}
+
+.collection-item {
+    border-bottom: 1px solid #000000;
+    color: #2831e2; 
+}
+
+/* Total Amount Styles */
+#total-amount {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #4df919; 
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .button-container {
+        flex-direction: column;
+    }
+    
+    .btn {
+        margin: 5px 0;
+    }
+}

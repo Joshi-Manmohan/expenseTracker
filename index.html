@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="exp.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script defer src="exp.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="center-align">Expense Tracker</h1>
+        <div class="input-field">
+            <input type="text" id="item-name" placeholder="Item Name" required>
+            <label for="item-name">Item Name</label>
+        </div>
+        <div class="input-field">
+            <input type="number" id="item-amount" placeholder="Amount" required>
+            <label for="item-amount">Amount</label>
+        </div>
+        <div class="button-container">
+            <button id="add-item" class="btn waves-effect waves-light">Add Item</button>
+            <button id="clear-all" class="btn red waves-effect waves-light">Clear All</button>
+        </div>
+        <ul id="expense-list" class="collection">
+            <li class="collection-header"><h5>The Total Is This Much</h5></li>
+        </ul>
+        <div id="total-amount" class="section"><h5>Total: $0.00</h5></div>
+    </div>
+</body>
+</html>
